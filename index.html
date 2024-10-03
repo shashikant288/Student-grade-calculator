@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="head">Grade Calculator</h1>
+        <div class="box">
+            <button id="btn1" onclick="percentage()">Percentage Calculator</button>
+            <button id="btn2" onclick="cgpa()">CGPA Calculator</button>
+        </div>
+        <div class="percentage">
+            <h1>Percentage Calculator</h1>
+            <label id="first">Total Mark:</label>
+            <input type="text" id="totalMark">
+            <br>
+            <label id="second">Obtained Mark:</label>
+            <input type="text" id="obtainMark">
+            <button onclick="hello()">Result</button>
+            <!-- <p id="#showdata"></p> -->
+        </div>
+        <div class="cgpa">
+            <h1>CGPA Calculator</h1>
+            <div class="buttons">
+                <button id="ptc" onclick="percentageCGPA()">Percentage to CGPA Calculator</button>
+                <br>
+                <button id="ctp" onclick="cgpaPercentage()">CGPA to Percentage Calculator</button>
+            </div>
+            <div class="percentageToCGPA">
+                <h2>Percentage to CGPA Calculator</h2>
+                <input type="text" id="firstText" placeholder="Enter your Percentage"><br>
+                <input type="text" id="secondText" placeholder="Your CGPA is"><br>
+                <button id="calculate1" onclick="calculateCGPA()">Calculate</button>
+            </div>
+            <div class="CGPAtoPercentage">
+                <h2>CGPA to Percentage Calculator</h2>
+                <input type="text" id="thirdText" placeholder="Enter your CGPA"><br>
+                <input type="text" id="fourText" placeholder="Your percentage is"><br>
+                <button id="calculate2" onclick="calculatePercentage()">Calculate</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
